@@ -1,0 +1,66 @@
+.Countdown_Card {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	border-radius: 20px;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	width: 600px;
+}
+
+.Countdown_Title {
+	color: #ff0000;
+}
+
+.Countdown_Clock {
+	display: flex;
+	font-size: 50px;
+	gap: 20px;
+}
+
+.Countdown_Clock div {
+	color: #0000ff;
+}
+
+.Countdown_Clock div span {
+	font-size: 20px;
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 768px) {
+	.Countdown_Card {
+		width: 90%;
+	}
+
+	.Countdown_Clock {
+		font-size: 40px;
+		gap: 10px;
+	}
+
+	.Countdown_Clock div span {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 480px) {
+	.Countdown_Card {
+		width: 70%;
+		padding: 5px;
+	}
+
+	.Countdown_Clock {
+		font-size: 20px;
+		gap: 5px;
+	}
+
+	.Countdown_Clock div span {
+		font-size: 12px;
+	}
+}
